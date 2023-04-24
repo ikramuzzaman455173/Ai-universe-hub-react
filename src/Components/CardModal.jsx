@@ -1,10 +1,10 @@
 import React from "react";
 
 const CardModal = ({ singleData }) => {
-  console.log(singleData);
+  // console.log(singleData);
   const { tool_name, description, image_link, input_output_examples, features, integrations, pricing, accuracy } = singleData
   let feature = Object.values(features || '')
-  console.log(feature);
+  // console.log(feature);
   return (
     <>
       {/* Put this part before </body> tag */}
