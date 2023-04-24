@@ -11,7 +11,7 @@ const Card = () => {
   // console.log(uniqueId);
   useEffect(() => {
       fetch('https://openapi.programming-hero.com/api/ai/tools').then(response => response.json()).then(data => {
-        console.log(data)
+        // console.log(data)
         setData(data.data.tools)
       }).catch(error=>console.log(`404 page not found ${error}`))
   }, [])
@@ -29,7 +29,7 @@ const Card = () => {
   // data sortBy Date
   const handleDateSort = () => {
     const sortData = data.sort((a, b) => new Date(b.published_in) - new Date(a.published_in))
-    console.log(sortData,'date');
+    // console.log(sortData,'date');
     setData([...data, sortData])
     setbuttonShow(false)
   }
